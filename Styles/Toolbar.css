@@ -1,0 +1,18 @@
+/* Side Toolbar Div */
+#toolbar {
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    padding-left: 5px;
+    border-right: 1px white solid;
+    top: 0px;
+    bottom: 0px;
+    background-color: #0006;
+    float: bottom;
+}
+
+/* Toolbar Item */
+#toolbar-items {
+    bottom: 5px;
+    position: absolute;
+}

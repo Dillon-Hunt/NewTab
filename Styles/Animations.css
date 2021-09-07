@@ -1,0 +1,31 @@
+/* Rainbow Gamer Animation */
+@keyframes pulse {
+    0% {
+    background-color: #ff2c2c;
+    }
+    25% {
+    background-color: #58bd1d;
+    }
+    50% {
+    background-color: #005eff;
+    }
+    75% {
+    background-color: #b815b8;
+    }
+    100% {
+    background-color: #ff2c2c;
+    }
+}
+
+
+/* Fade Item Background To Transparent */
+@keyframes fadeToNone {
+    0% {
+        display: #090909cc;
+        color: white;
+    }
+    100% {
+        color: #00000000;
+        background-color: #00000000;
+    }
+}

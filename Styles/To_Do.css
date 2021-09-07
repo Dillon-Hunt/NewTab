@@ -1,0 +1,22 @@
+#to-do-div {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+#to-do-item {
+    color: inherit;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#to-do-input {
+    outline: none;
+    background-color: #0000;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: inherit;
+    border-bottom: 1px solid white;
+    font-size: medium;
+}

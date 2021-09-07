@@ -1,0 +1,38 @@
+/* App Div */
+.app {
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+/* App Icon Image */
+.app-image {
+    width: 75px;
+}
+
+/* App Letter Icon */
+.custom-app p {
+    width: 115px !important;
+}
+
+.custom-app h1 {
+    margin: 0px;
+    font-size: 52px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 21px;
+    margin-left: calc(calc(115px - 75px) / 2);
+}
+
+/* Library Div */
+#library {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+/* Library Content */
+.library-items {
+    width: 52%;
+}

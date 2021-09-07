@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- Title -->
+		<title>New Tab</title>
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./Styles/Animations.css">
+		<link rel="stylesheet" href="./Styles/Clock.css">
+		<link rel="stylesheet" href="./Styles/Fonts.css">
+		<link rel="stylesheet" href="./Styles/History.css">
+		<link rel="stylesheet" href="./Styles/Library.css">
+		<link rel="stylesheet" href="./Styles/Main.css">
+		<link rel="stylesheet" href="./Styles/Search_Bar.css">
+		<link rel="stylesheet" href="./Styles/Settings.css">
+		<link rel="stylesheet" href="./Styles/To_Do.css">
+		<link rel="stylesheet" href="./Styles/Toolbar.css">
+		<link rel="stylesheet" href="./Styles/Web_Apps.css">
+		<link rel="stylesheet" href="./Styles/Widgets.css">
+
+		<!-- Scripts -->
+		<script defer src="./Scripts/Clock.js"></script>
+		<script defer src="./Scripts/Display.js"></script>
+		<script defer src="./Scripts/Drag_Drop.js"></script>
+		<script defer src="./Scripts/History.js"></script>
+		<script defer src="./Scripts/Library.js"></script>
+		<script defer src="./Scripts/Main.js"></script>
+		<script defer src="./Scripts/Search.js"></script>
+		<script defer src="./Scripts/Settings.js"></script>
+		<script defer src="./Scripts/To_Do.js"></script>
+		<!-- <script defer src="./Scripts/Weather.js"></script> -->
+		<script defer src="./Scripts/Web_App.js"></script>
+		<script defer src="./Scripts/Widgets.js"></script>
+	</head>
+
+	<body id="body">
+		<!-- New Settings Page -->
+		<div id="settings-page" style="display: none;">
+			<div id="settings-sidebar">
+				<button class="settings-sidebar-button settings-sidebar-button-top" id="general-button">General</button>
+				<button class="settings-sidebar-button" id="apps-button">Apps</button>
+				<button class="settings-sidebar-button" id="widgets-button">Widgets</button>
+				<button class="settings-sidebar-button" id="layout-button">Layout</button>
+				<button class="settings-sidebar-button settings-sidebar-button-bottom" id="feedback-button">Feedback</button>
+			</div>
+
+			<div id="settings-content">
+
+				<!-- General Page -->
+				<div id="general-page">
+					<h2>General</h2>
+
+					<!-- Background Select-->
+					<h3>Background:</h3>
+					<select id="background-select">
+						<option value="./Images/background-cliff1.jpeg">Cliffs 1</option>
+						<option value="./Images/background-cliff2.jpeg">Cliffs 2</option>
+						<option value="./Images/background-lake1.jpeg">Lake 1</option>
+						<option value="./Images/background-lake2.jpeg">Lake 2</option>
+						<option value="./Images/background-mountain1.jpeg">Mountains 1</option>
+						<option value="./Images/background-mountain2.jpeg">Mountains 2</option>
+						<option value="./Images/background-night-sky1.jpeg">Night Sky 1</option>
+						<option value="./Images/background-night-sky2.jpeg">Night Sky 2</option>
+						<option value="./Images/background-northern-lights1.jpeg">Northern Lights 1</option>
+						<option value="./Images/background-northern-lights2.jpeg">Northern Lights 2</option>
+						<option value="./Images/background-river1.jpeg">River 1</option>
+						<option value="./Images/background-river2.jpeg">River 2</option>
+						<option value="./Images/background-space1.jpeg">Space 1</option>
+						<option value="./Images/background-space2.jpeg">Space 2</option>
+						<option value="./Images/background-will-smith.jpeg">Will Smith</option>
+					</select>
+					<button id="background-select-button" class="done-button">Done</button>
+
+					<!-- Custom Background Url -->
+					<input id="background-select-url" autocomplete="off" style="padding: 0px; padding-left: 10px; margin: 0px; margin-top: 5px; width: calc(70% - 10px);" placeholder="Background Image Url">
+					<button id="background-select-url-button" class="done-button" style="margin-top: 5px;">Done</button>
+
+					<!-- Theme Select -->
+					<h3>Theme:</h3>
+					<select id="color-select">
+						<option value="Dark">Dark</option>
+						<option value="Light">Light</option>
+						<option value="Gamer">Gamer</option>
+					</select>
+					<button id="color-theme-select-button" class="done-button">Done</button>
+
+					<!-- Clock Style Select -->
+					<h3>Clock Style:</h3>
+					<select id="clock-style-select">
+						<option value="12">12 Hour Time</option>
+						<option value="24">24 Hour Time</option>
+					</select>
+					<button id="clock-style-select-button" class="done-button">Done</button>
+
+					<!-- Search Query -->
+					<h3>Custom Search Query:</h3>
+					<input id="search-query-select-url" autocomplete="off" style="padding: 0px; padding-left: 10px; margin: 0px; margin-top: 5px; width: calc(70% - 10px);" placeholder="https://www.google.com/search?q=">
+					<button id="search-query-select-url-button" class="done-button" style="margin-top: 5px;">Done</button>
+
+					<!-- Developer Apps Toggle Select -->
+					<h3>Toolbar Web Apps From Developer:</h3>
+					<select id="toolbar-apps-select">
+						<option value="show">Shown</option>
+						<option value="hide">Hidden</option>
+					</select>
+					<button id="toolbar-apps-select-button" class="done-button">Done</button>
+
+					<!-- To Do Prefix -->
+					<h3>To Do Prefix:</h3>
+					<input id="to-do-prefix-select" autocomplete="off" style="padding: 0px; padding-left: 10px; margin: 0px; margin-top: 5px; width: calc(70% - 10px);" placeholder="- ">
+					<button id="to-do-prefix-select-button" class="done-button" style="margin-top: 5px;">Done</button>
+
+				</div>
+
+				<!-- Apps Page -->
+				<div id="apps-page" style="display: none;">
+					<h2>Apps</h2>
+					<h3>Style:</h3>
+					<select id="app-style-select">
+						<option value="100px">Circle</option>
+						<option value="20px">Rounded</option>
+						<option value="0px">Square</option>
+					</select>
+					<button id="app-style-select-button" class="done-button">Done</button>
+					<h3>Display:</h3>
+					<select id="app-display-select">
+						<option value="solid">Solid</option>
+						<option value="transparent">Transparent</option>
+						<option value="hidden">Hidden</option>
+					</select>
+					<button id="app-display-select-button" class="done-button">Done</button>
+					<h3>Reset:</h3>
+					<button id="reset-apps" style="width: -moz-available; margin-left: calc(calc(5% - 10px)/2); margin-right: 10px; margin-top: 5px;">Reset Apps And Related Settings</button>
+				</div>
+
+				<!-- Widgets Page -->
+				<div id="widgets-page">
+					<h2>Widgets</h2>
+					<h3>Theme:</h3>
+					<select id="widget-theme-select">
+						<option value="dark">Dark</option>
+						<option value="light">Light</option>
+					</select>
+					<button id="widget-theme-select-button" class="done-button">Done</button>
+
+					<h3>Style:</h3>
+					<select id="widget-style-select">
+						<option value="sidebar">Sidebar</option>
+						<option value="on-screen">On-Screen</option>
+					</select>
+					<button id="widget-style-select-button" class="done-button">Done</button>
+				</div>
+
+				<!-- Layout Page -->
+				<div id="layout-page">
+					<h2>Layout</h2>
+					<h3>Toolbar:</h3>
+					<select id="toolbar-orientation-select">
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+					</select>
+					<button id="toolbar-orientation-select-button" class="done-button">Done</button>
+				</div>
+
+				<!-- Feedback Page -->
+				<div id="feedback-page">
+					<h2>Feedback</h2>
+					<h3>Submit Feedback:</h3>
+					<input id="feedback-subject" autocomplete="off" style="padding: 0px; padding-left: 5px; margin-left: calc(calc(5% - 10px)/2); margin-right: 10px; margin-top: 5px; width: -moz-available;" placeholder="Title">
+					<input id="feedback-body" autocomplete="off" style="padding: 0px; padding-left: 5px; margin-left: calc(calc(5% - 10px)/2); margin-right: 10px; margin-top: 5px; width: -moz-available;" placeholder="Feedback">
+					<button id="feedback-submit" style="padding: 5px; margin-left: calc(calc(5% - 10px)/2); margin-right: 10px; margin-top: 5px; width: -moz-available; line-height: 1.5em;">Submit Feedback</button>
+				</div>
+			</div>
+			<h4 id="settings-dismiss">&times;</h4>
+		</div>
+
+		<!-- My Web Apps -->
+		<iframe id="webapp" src="" style="display: none"></iframe>
+
+		<!-- Toolbar -->
+		<button id="toggle-display" style="display: none;" width="20px"><img style="padding-top: 20px; left: 5px;" src="./Images/more.svg" width="20px"></button>	
+		<div id="toolbar">
+			<div id="toolbar-items">
+				<button id="lanes-cafe" class="dev-apps" style="border: none; background-color: transparent;" width="25px"><img style="padding-top: 20px; left: 5px;" src="./Images/lanes-cafe.jpg" width="25px"></button>
+				<button id="kitchefs" class="dev-apps" style="border: none; background-color: transparent;" width="25px"><img style="padding-top: 20px; left: 5px;" src="./Images/kitchefs.svg" width="25px"></button>
+				<button id="widgets-toggle" style="border: none; background-color: transparent;" width="20px"><img style="padding-top: 20px; left: 5px;" src="./Images/app.svg" width="20px"></button>
+				<button id="add-apps" style="border: none; background-color: transparent;" width="20px"><img style="padding-top: 20px; left: 5px;" src="./Images/add.svg" width="25px"></button>
+				<button id="settings-button" style="border: none; background-color: transparent;"><img width="25px" style="padding-top: 20px; left: 5px;" src="./Images/settings.svg"/></button>
+			</div>
+		</div>
+
+		<!-- To Do List -->
+		<div id="to-do-div">
+			<form id="to-do-form">
+				<input id="to-do-input" autocomplete="off" placeholder="To Do..." maxlength="30">
+			</form>
+			<div id="to-do-list">
+				<!-- Intentionally Blank -->
+			</div>
+		</div>
+
+		<!-- Clock -->
+		<div class="clock">
+			<h1 id="time"></h1>
+			<h2 id="date"></h2>
+		</div>
+
+		<!-- Search Bar -->
+		<div id="search-div">
+			<form id="search-form">
+				<input id="search-bar" type="search" autofocus="true" autocomplete="off" spellcheck="false" placeholder="Search"></input>
+				<button class="search-button" id="search-button"><img class="search-image" src="./Images/search-image.png"/></button>
+			</form>
+			<div id="history" class="history"></div>
+		</div>
+
+		<!-- App Library -->
+		<div id="library">
+			<div class="library-items">
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://mail.google.com/mail/u/0/"><img class="app-image" draggable="false" src="./Images/gmail.png"/><p>Gmail</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://www.youtube.com"><img class="app-image" draggable="false" src="./Images/youtube.png"/><p>YouTube</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://docs.google.com/document/u/0"><img class="app-image" draggable="false" src="./Images/docs.png"/><p>Docs</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://docs.google.com/presentation/u/0"><img class="app-image" draggable="false" src="./Images/slides.png"/><p>Slides</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://docs.google.com/spreadsheets/u/0"><img class="app-image" draggable="false" src="./Images/sheets.png" width="75Px"/><p>Sheets</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://docs.google.com/forms/u/0"><img class="app-image" draggable="false" src="./Images/forms.png"/><p>Forms</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://keep.google.com/u/0"><img class="app-image" draggable="false" src="./Images/keep.png"/><p>Keep</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://drive.google.com/drive/my-drive"><img class="app-image" draggable="false" src="./Images/drive.png"/><p>Drive</p></div></div>
+				<div class="app custom-app draggable" draggable="true" style="display: none;"><div title="https://translate.google.com"><img class="app-image" draggable="false" src="./Images/translate.png"/><p>Translate</p></div></div>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div>
+			<!-- Widgets -->
+			<div id="widgets-div">
+				<h2>Widgets</h2>
+
+				<!-- Stats Widget -->
+				<div class="widget" id="stats">
+					<h4 id="stats-dismiss">&times;</h4>
+					<p class="widget-title">Stats</p>
+					<p id="searches">0 Searches</p>
+					<p id="newTabs">0 NewTabs Opened</p>
+				</div>
+
+				<div class="widget" id="apps-widget">
+					<h4 id="apps-dismiss">&times;</h4>
+					<p class="widget-title">Create App</h2>
+					<input class="widget-input" type="file" id="file-input"/>
+					<!-- <label for="file-input" id="file-input-label">Upload Custom Image - Not Requried</label> -->
+					<input class="widget-input" autocomplete="off" id="url-input" placeholder="URL"/>
+					<input class="widget-input" autocomplete="off" id="name-input" placeholder="Name - Max Length 14 Characters" maxlength="14"/>
+					<button class="widget-button" id="apps-submit">Submit</button>
+				</div>
+
+
+				<div class="widget" id="notes">
+					<h4 id="notes-dismiss">&times;</h4>
+					<p class="widget-title">Notes</p>
+					<textarea id="notes-headding"></textarea>
+					<textarea id="notes-body"></textarea>
+				</div>
+
+				<!-- Widgets Edit Button -->
+				<h4 id="edit-widgets">Edit Widgets</h4>
+
+				<!-- Add Widget Sidebar -->
+				<div id="edit-widgets-div">
+					<h2>Edit Widgets</h2>
+					<p id="edit-stats-widget">Stats</p>
+					<p id="edit-apps-widget">Create App</p>
+					<p id="edit-notes-widget">Notes</p>
+				</div>
+
+				<!-- To Do: Add Option To Add Widgets To widgets-div -->
+			</div>
+		</div>
+	</body>	  
+</html>

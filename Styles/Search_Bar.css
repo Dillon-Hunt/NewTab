@@ -1,0 +1,48 @@
+/* Search Bar Input */
+#search-bar {
+    background-color: #0000;
+    color: white;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+}
+
+/* Remove Blue Outline */
+#search-bar:focus, #search-bar:active {
+    outline: none !important;
+}
+
+/* Search Microscope Image */
+.search-image {
+    position: center;
+    padding-top: 10px;
+    height: 15px;
+    width: 15px;
+}
+
+/* Search Bar Div */
+#search-div {
+    margin-top: 45vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+}
+
+/* Search Button */
+.search-button {
+    outline: none;
+    border: none;
+    background-color: #0000;
+}
+
+/* Search Manager Form */
+#search-form {
+    background-color: transparent;
+    width: 50%;
+    border-bottom: 1px white solid;
+}

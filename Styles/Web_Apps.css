@@ -1,0 +1,9 @@
+#webapp {
+    position: absolute;
+    width: calc(100% - 46px);
+    left: 46px;
+    height: 100%;
+    top: 0px;
+    z-index: 10;
+    border: none;
+}

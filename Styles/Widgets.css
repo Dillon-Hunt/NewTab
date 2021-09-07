@@ -1,0 +1,148 @@
+/* Widgets Manager Div */
+#edit-widgets-div {
+    text-align: left;
+    background-color: #0006;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 46px;
+    display: none;
+    width: 15%;
+}
+
+/* Wigets Manager Text */
+#edit-widgets-div p {
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 15px;
+}
+
+/* Widgets Sidebar Div */
+#widgets-div {
+    text-align: left;
+    background-color: #0006;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    outline: none;
+}
+
+/* Toggle Widgets Manager Button */
+#edit-widgets {
+    -moz-user-select: none;
+    position: absolute;  
+    margin-top: 19.92px;                
+    top: 5px; 
+    right: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 50%;
+    border-radius: 15px;
+    border: 1px white solid;
+}
+
+/* Widget Div */
+.widget {
+    margin-bottom: 10px;
+    background-color: #090909cc;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Wiget Text */
+.widget p {
+    margin: 0px;
+}
+
+/* Widget Dismiss Button */
+.widget h4 {
+    -moz-user-select: none;
+    position: absolute;  
+    margin: 0px;                
+    top: 5px;                          
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Widget Title Text */
+.widget-title {
+    font-size: 150%;
+    margin: 0px;
+}
+
+/* File Input
+#apps-widget label {
+    font-size: 13.5px;
+    background-color: rgba(151, 151, 151, 0.153);
+    margin: 0px;
+    padding: 5px;
+    border-radius: 3px;
+    width: -moz-available;
+    color: #ffffff80;
+}
+*/
+
+/* Widget Text Input Field */
+.widget-input {
+    width: -moz-available;
+    background-color: #000;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+/* Widget Button Input */
+.widget-button {
+    width: -moz-available;
+    background-color: #000;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+/* Notes Widget */
+#notes {
+    height: 200px
+}
+
+/* Notes Widget Headding */
+#notes-headding {
+    overflow-y: hidden;
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    font-size: large;
+}
+
+/* Notes Widget Body */
+#notes-body {
+    resize: none;
+    width: 98%;
+    height: 70%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    font-size: small;
+    scrollbar-width: none;
+}

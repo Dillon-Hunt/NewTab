@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/*
+#title {
+
+}
+
+#item {
+}
+*/
+
+#input-field {
+    width: 100%;
+}

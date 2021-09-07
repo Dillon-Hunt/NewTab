@@ -1,0 +1,148 @@
+#settings-page {
+  display: none;
+  border: 1px solid #5d5d5d;;
+  background-color: #2a2a2aeb;
+  position: absolute;
+  height: 60%;
+  width: 50%;
+  left: 25%;
+  top: 20%;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#settings-sidebar {
+  border-right: 1px solid #5d5d5d;;
+  width: 20%;
+  position: absolute;
+  height: 100%;
+}
+
+#settings-content {
+  height: 100%;
+  width: 80%;
+  right: 0px;
+  position: absolute;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+#settings-content h2 {
+  text-align: left;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+#settings-content h3 {
+  text-align: left;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+#settings-content select {
+  border: thin solid #0007;
+  font: 300 1em/100% "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 5px;
+  border-radius: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-appearance: none;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(45deg, #0006 50%, #0006 50%);
+}
+
+#settings-content button {
+  border: thin solid #0007;
+  font: 300 1em/100% "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 5px;
+  border-radius: 0;
+  margin: 0px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  -moz-appearance:none;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  background: linear-gradient(45deg, #0006 50%, #0006 50%);
+}
+
+#settings-content button:hover{
+  background-color: #0008;
+}
+
+#settings-content input {
+  text-align: left;
+  color: white;
+  margin: 0px;
+}
+
+#settings-content input {
+  background: #0006;
+  color: white;
+  border: thin solid #0007;
+  border-radius: 5px;
+  outline: none;
+  width: 70%;
+  height: 36px;
+}
+
+#settings-sidebar button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #5d5d5d;;
+  padding: 10px;
+  text-align: left;
+}
+
+#settings-sidebar button:hover{
+  background-color: #0002;
+}
+
+.settings-sidebar-button-selected {
+  background-color: #1b1b1b !important;
+}
+
+#settings-dismiss {
+  position: absolute;
+  color: white;
+  margin: 0px;
+  right: 10px;
+  cursor: pointer;
+  -moz-user-select: none;
+}
+
+.settings-sidebar-button-bottom {
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  border-bottom: 0px !important;
+  border-top: 1px solid #5d5d5d !important;
+  border-bottom-left-radius: 5px;
+}
+
+.settings-sidebar-button-top {
+  border-top-left-radius: 5px;
+}
+
+/* Select Dropdown */
+select {
+  width: 70%;
+}
+/* Selector Submit Button */
+.done-button {
+  width: 25%;
+  padding-top: 0px;
+  margin-top: 5px;
+  float: right;
+}
